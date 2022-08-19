@@ -1,11 +1,6 @@
-## My Project
+## Go bindings for CDK Dynamo Table Viewer
 
-TODO: Fill this README out!
-
-Be sure to:
-
-* Change the title in this README
-* Edit your repository description on GitHub
+This repository contains Go bindings for https://github.com/cdklabs/cdk-dynamo-table-viewer.
 
 ## Security
 
