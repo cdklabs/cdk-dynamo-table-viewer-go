@@ -48,6 +48,9 @@ func (j *jsiiProxy_TableViewer) Node() constructs.Node {
 func NewTableViewer(parent constructs.Construct, id *string, props *TableViewerProps) TableViewer {
 	_init_.Initialize()
 
+	if err := validateNewTableViewerParameters(parent, id, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TableViewer{}
 
 	_jsii_.Create(
@@ -76,6 +79,9 @@ func NewTableViewer_Override(t TableViewer, parent constructs.Construct, id *str
 func TableViewer_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateTableViewer_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
