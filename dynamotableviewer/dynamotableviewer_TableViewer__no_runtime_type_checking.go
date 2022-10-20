@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 // An AWS CDK construct which exposes an endpoint with the contents of a DynamoDB table
 package dynamotableviewer
