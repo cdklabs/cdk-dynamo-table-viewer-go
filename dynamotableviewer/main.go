@@ -1,3 +1,4 @@
+// An AWS CDK construct which exposes an endpoint with the contents of a DynamoDB table
 package dynamotableviewer
 
 import (

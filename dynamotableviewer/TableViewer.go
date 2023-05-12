@@ -1,4 +1,3 @@
-// An AWS CDK construct which exposes an endpoint with the contents of a DynamoDB table
 package dynamotableviewer
 
 import (
@@ -10,12 +9,16 @@ import (
 )
 
 // Installs an endpoint in your stack that allows users to view the contents of a DynamoDB table through their browser.
+// Experimental.
 type TableViewer interface {
 	constructs.Construct
+	// Experimental.
 	Endpoint() *string
 	// The tree node.
+	// Experimental.
 	Node() constructs.Node
 	// Returns a string representation of this construct.
+	// Experimental.
 	ToString() *string
 }
 
@@ -45,6 +48,7 @@ func (j *jsiiProxy_TableViewer) Node() constructs.Node {
 }
 
 
+// Experimental.
 func NewTableViewer(parent constructs.Construct, id *string, props *TableViewerProps) TableViewer {
 	_init_.Initialize()
 
@@ -62,6 +66,7 @@ func NewTableViewer(parent constructs.Construct, id *string, props *TableViewerP
 	return &j
 }
 
+// Experimental.
 func NewTableViewer_Override(t TableViewer, parent constructs.Construct, id *string, props *TableViewerProps) {
 	_init_.Initialize()
 

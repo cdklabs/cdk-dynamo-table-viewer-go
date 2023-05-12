@@ -28,13 +28,15 @@ $ npm i cdk-dynamo-table-viewer
 Add to your CDK stack:
 
 ```go
-import { TableViewer } from 'cdk-dynamo-table-viewer'
+var cookiesTable table
 
-const viewer = new TableViewer(this, 'CookiesViewer', {
-  table: cookiesTable,
-  title: 'Cookie Sales', // optional
-  sortBy: '-sales'       // optional ("-" denotes descending order)
-});
+
+viewer := dynamotableviewer.NewTableViewer(this, jsii.String("CookiesViewer"), &TableViewerProps{
+	Table: cookiesTable,
+	Title: jsii.String("Cookie Sales"),
+	 // optional
+	SortBy: jsii.String("-sales"),
+})
 ```
 
 Notes:
